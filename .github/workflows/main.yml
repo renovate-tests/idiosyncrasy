@@ -9,10 +9,10 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: lint
 
@@ -21,9 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: build
